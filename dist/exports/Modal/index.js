@@ -2,12 +2,12 @@ import createElement from '../createElement';
 import View from '../View';
 import TouchableWithoutFeedback from '../TouchableWithoutFeedback';
 
-export default (props) => {
+export default function (props) {
   if (!props.visible)
     return null;
   else {
     return (createElement(TouchableWithoutFeedback, {
-      onPress: () => props.onRequestClose && props.onRequestClose() },
+      onPress: function () { return props.onRequestClose && props.onRequestClose(); } },
       createElement(View, { style: {
         position: 'fixed',
         left: 0,
