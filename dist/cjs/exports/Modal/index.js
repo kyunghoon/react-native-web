@@ -22,7 +22,7 @@ exports.default = (props) => {
         top: 0,
         bottom: 0,
         right: 0,
-        backgroundColor: '#000000cc',
+        backgroundColor: '#00000080',
         zIndex: 1000,
         justifyContent: 'center',
         alignItems: 'center',
